@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Chevrolet Camaro ZL1 — The definitive American muscle car. 650 horsepower of supercharged fury.">
+  <title>CAMARO ZL1 — Built to Dominate</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__brand"><span>■</span> CAMARO</a>
+    <ul class="nav__links">
+      <li><a href="#legacy" class="nav__link">Legacy</a></li>
+      <li><a href="#exterior" class="nav__link">Exterior</a></li>
+      <li><a href="#engine" class="nav__link">Engine</a></li>
+      <li><a href="#speed" class="nav__link">Speed</a></li>
+      <li><a href="#interior" class="nav__link">Interior</a></li>
+      <li><a href="#trims" class="nav__link">Trims</a></li>
+    </ul>
+    <a href="#cta" class="nav__cta">
+      Build &amp; Price
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M3 8h10M9 4l4 4-4 4" />
+      </svg>
+    </a>
+  </nav>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero.png" alt="Chevrolet Camaro ZL1 front quarter view" id="heroBg">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__glow"></div>
+
+    <!-- Editorial frame + corner ticks -->
+    <div class="hero__frame" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero__meta" aria-hidden="true">Chevrolet Performance</div>
+
+    <div class="hero__content">
+      <div class="hero__line" id="heroLine"></div>
+      <p class="hero__label" id="heroLabel"><span class="hero__label-dot"></span>2024 Camaro ZL1 · 1LE Package</p>
+      <h1 class="hero__title" id="heroTitle">BUILT TO<br>DOMINATE</h1>
+      <p class="hero__subtitle" id="heroSub">650 horsepower. Supercharged V8. The most track-capable Camaro ever
+        engineered.</p>
+
+      <div class="hero__stats" id="heroStats">
+        <div class="hero__stat">
+          <div class="hero__stat-value">650<span>HP</span></div>
+          <div class="hero__stat-label">Supercharged V8</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">3.5<span>s</span></div>
+          <div class="hero__stat-label">0–60 MPH</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">198<span>MPH</span></div>
+          <div class="hero__stat-label">Top Speed</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SHOWCASE ===== -->
+  <section class="video-scroller" id="videoScroller">
+    <div class="video-scroller__sticky">
+
+      <!-- Background video — stays visible throughout -->
+      <div class="video-scroller__bg" id="videoScrollerBg">
+        <video id="bgVideoPlayer" autoplay muted loop playsinline>
+          <source src="images/Video Project.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Subtle vignette — always on, never overpowering -->
+      <div class="video-scroller__vignette"></div>
+
+      <!-- PHASE 1: Bottom-left title — "HEAR IT ROAR" stays anchored here -->
+      <div class="vs-p1" id="videoPhase1">
+        <p class="vs-p1__label" id="vsLabel1">Experience the Power</p>
+        <h2 class="vs-p1__title">
+          <span class="vs-p1__word" id="vsTL1">HEAR IT</span>
+          <span class="vs-p1__word" id="vsTL2">ROAR</span>
+        </h2>
+        <p class="vs-p1__sub" id="vsSubtitle1">The 6.2L supercharged LT4 V8</p>
+      </div>
+
+      <!-- PHASE 2: Compact info panel — slides in from right, sits beside the title -->
+      <div class="vs-p2" id="videoPhase2">
+        <div class="vs-p2__line" id="vsP2Line"></div>
+        <p class="vs-p2__quote" id="vsQuote">The heartbeat of an<br>American legend.</p>
+        <div class="vs-p2__stat" id="vsStatRow">
+          <span class="vs-p2__stat-num" id="vsHpCount">0</span>
+          <span class="vs-p2__stat-unit">HP</span>
+        </div>
+        <a href="images/Video Project.mp4" target="_blank" class="vs-p2__link" id="vsLink">
+          <span class="vs-p2__link-dash"></span> View Full Video
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: LEGACY — scroll-pinned storytelling ===== -->
+  <section class="legacy-scroller" id="legacy">
+    <div class="legacy-scroller__sticky">
+
+      <!-- Background image — parallax layer -->
+      <div class="legacy-scroller__bg" id="legacyBg">
+        <img src="images/rear.png" alt="Camaro rear view" id="legacyBgImg">
+      </div>
+      <div class="legacy-scroller__bg-overlay"></div>
+
+      <!-- Phase 1: Headline -->
+      <div class="ls-phase" id="lsPhase1">
+        <div class="ls-phase__label">Since 1966</div>
+        <h2 class="ls-phase__title">
+          <span class="ls-char-row" id="lsTitle1">SIX DECADES</span><br>
+          <span class="ls-char-row" id="lsTitle2">OF MUSCLE</span>
+        </h2>
+      </div>
+
+      <!-- Phase 2: Body text -->
+      <div class="ls-phase ls-phase--text" id="lsPhase2">
+        <p class="ls-phase__para" id="lsPara1">
+          Born in 1966 as Chevrolet's answer to the Ford Mustang, the <strong>Camaro</strong> didn't just enter the
+          pony car wars — it rewrote the rules.
+        </p>
+        <p class="ls-phase__para" id="lsPara2">
+          From the first-generation SS396 to the modern ZL1 1LE, every generation has pushed the boundary of what a
+          street-legal performance car can do.
+        </p>
+        <p class="ls-phase__para" id="lsPara3">
+          Today's ZL1 is the <strong>most powerful Camaro</strong> ever built — delivering <strong>650
+            horsepower</strong> to the rear wheels.
+        </p>
+      </div>
+
+      <!-- Phase 3: Stats counter -->
+      <div class="ls-phase ls-phase--stats" id="lsPhase3">
+        <div class="ls-stat" id="lsStat1">
+          <div class="ls-stat__value"><span class="count-up" data-target="6">0</span><span
+              class="ls-stat__suffix">th</span></div>
+          <div class="ls-stat__label">Generation</div>
+        </div>
+        <div class="ls-stat" id="lsStat2">
+          <div class="ls-stat__value"><span class="count-up" data-target="5">0</span><span
+              class="ls-stat__suffix">M+</span></div>
+          <div class="ls-stat__label">Units Produced</div>
+        </div>
+        <div class="ls-stat" id="lsStat3">
+          <div class="ls-stat__value"><span class="count-up" data-target="58">0</span><span
+              class="ls-stat__suffix">yr</span></div>
+          <div class="ls-stat__label">Of Heritage</div>
+        </div>
+      </div>
+
+      <!-- Scroll progress indicator -->
+      <div class="ls-progress" id="lsProgress">
+        <div class="ls-progress__fill" id="lsProgressFill"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: EXTERIOR — scroll zoom ===== -->
+  <section class="exterior-scroller" id="exterior">
+    <div class="exterior-scroller__sticky">
+      <div class="exterior-scroller__img-wrap" id="exteriorWrap">
+        <img src="images/camaro.png" alt="Camaro ZL1 dramatic night shot" id="exteriorImg">
+      </div>
+      <div class="exterior-scroller__overlay" id="exteriorOverlay"></div>
+      <div class="exterior-scroller__content" id="exteriorContent">
+        <p class="section-header__label" id="extLabel">Sculpted by Speed</p>
+        <h2 class="exterior__title" id="extTitle">
+          <span class="ext-word" id="extWord1">AGGRESSIVE</span><br>
+          <span class="ext-word" id="extWord2">BY DESIGN</span>
+        </h2>
+        <p class="exterior__desc" id="extDesc">
+          Every surface serves a purpose. The wider body adds 80mm of track width. The functional hood extractor pulls
+          heat from the supercharger. The front splitter generates real downforce. This isn't styling — it's aerodynamic
+          engineering made visible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: ENGINE — horizontal text reveal ===== -->
+  <div class="divider" id="engineDivider"></div>
+  <section class="section engine" id="engine">
+    <div class="section__inner">
+      <div class="section-header">
+        <p class="section-header__label" id="engineLabel">Supercharged LT4 V8</p>
+        <h2 class="section-header__title" id="engineTitle">
+          <span class="htext-reveal" id="engineTitleW1">The Heart</span><br>
+          <span class="htext-reveal htext-reveal--delay" id="engineTitleW2">of the Beast</span>
+        </h2>
+      </div>
+      <div class="engine__layout">
+        <div class="engine__image" id="engineImgWrap">
+          <img src="images/engine-bay.png" alt="Supercharged 6.2L LT4 V8 engine in the Camaro ZL1" id="engineImg">
+        </div>
+        <div>
+          <p class="legacy__text engine-para" id="enginePara1">
+            The LT4 is a <strong>6.2-liter supercharged V8</strong> that delivers 650 horsepower and 650 lb-ft of
+            torque. An Eaton 1.7-liter supercharger force-feeds air into the direct-injected engine, producing a flat
+            torque curve that pins you to the seat from idle to redline.
+          </p>
+          <p class="legacy__text engine-para" id="enginePara2" style="margin-top: 24px;">
+            Paired with either a <strong>Tremec 6-speed manual</strong> or a 10-speed automatic with paddle shifters,
+            the ZL1 delivers its power with surgical precision. Active rev matching, no-lift shift, and launch control
+            come standard.
+          </p>
+          <div class="engine__specs">
+            <div class="spec-card" id="specCard1">
+              <div class="spec-card__value"><span class="count-up" data-target="650">0</span><span>+</span></div>
+              <div class="spec-card__label">Horsepower</div>
+            </div>
+            <div class="spec-card" id="specCard2">
+              <div class="spec-card__value"><span class="count-up" data-target="650">0</span><span>lb-ft</span></div>
+              <div class="spec-card__label">Torque</div>
+            </div>
+            <div class="spec-card" id="specCard3">
+              <div class="spec-card__value">3.5<span>s</span></div>
+              <div class="spec-card__label">0–60 MPH</div>
+            </div>
+            <div class="spec-card" id="specCard4">
+              <div class="spec-card__value"><span class="count-up" data-target="198">0</span><span>mph</span></div>
+              <div class="spec-card__label">Top Speed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: SPEED — Top-Speed Run (camera-locked tracking shot) ===== -->
+  <div class="divider"></div>
+  <section class="speed" id="speed">
+    <div class="speed__sticky" id="speedSticky">
+
+      <!-- Full-bleed car — the camera tracks it, the world blurs past -->
+      <div class="speed__stage" id="speedStage">
+        <img src="images/camaro-side.png" alt="Camaro ZL1 at full speed" class="speed__car" id="speedCar">
+      </div>
+
+      <!-- Warm light streaks whipping past (screen blend drops the black) -->
+      <div class="speed__streaklights" id="speedStreakLights"></div>
+
+      <!-- Tire smoke off the rear -->
+      <div class="speed__smoke" id="speedSmoke"></div>
+
+      <!-- Fast speed lines -->
+      <div class="speed__lines" id="speedLines"></div>
+
+      <!-- Speed-tunnel vignette + redline colour grade -->
+      <div class="speed__vignette" id="speedVignette"></div>
+      <div class="speed__grade" id="speedGrade"></div>
+
+      <!-- HUD: radial speedometer -->
+      <div class="speed__hud" id="speedHud">
+        <svg class="speed__gauge" viewBox="0 0 200 200" id="speedGauge" aria-hidden="true">
+          <path class="gauge-track" d="M 43.4 161.6 A 80 80 0 1 1 156.6 161.6" fill="none"
+            stroke="rgba(255,255,255,0.10)" stroke-width="6" stroke-linecap="round" />
+          <path class="gauge-redline" d="M 43.4 161.6 A 80 80 0 1 1 156.6 161.6" fill="none" stroke="var(--red)"
+            stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="78"
+            opacity="0.55" />
+          <path class="gauge-fill" id="speedGaugeFill" d="M 43.4 161.6 A 80 80 0 1 1 156.6 161.6" fill="none"
+            stroke="url(#gaugeGrad)" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100"
+            stroke-dashoffset="100" />
+          <g id="speedGaugeTicks" stroke="rgba(255,255,255,0.35)" stroke-width="2"></g>
+          <g id="speedNeedle">
+            <line x1="100" y1="105" x2="50.5" y2="154.5" stroke="#fff" stroke-width="3.5" stroke-linecap="round" />
+            <circle cx="100" cy="105" r="8" fill="#141414" stroke="var(--red)" stroke-width="3" />
+          </g>
+          <defs>
+            <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff2b3f" />
+              <stop offset="1" stop-color="var(--red)" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="speed__readout">
+          <div class="speed__digital"><span id="speedDisplay">0</span><i>KM/H</i></div>
+          <div class="speed__gear" id="speedGear">GEAR — N</div>
+        </div>
+      </div>
+
+      <!-- Giant ghost number -->
+      <div class="speed__ghost" id="speedNumber">0</div>
+
+      <!-- Top-speed climax stamp -->
+      <div class="speed__stamp" id="speedStamp"><span class="speed__stamp-line"></span> Top Speed</div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: INTERIOR — cascading feature reveal ===== -->
+  <div class="divider"></div>
+  <section class="section interior" id="interior">
+    <div class="interior__split">
+      <div class="interior__text-side">
+        <div class="section-header">
+          <p class="section-header__label" id="intLabel">Cockpit</p>
+          <h2 class="section-header__title" id="intTitle">
+            <span class="htext-reveal" id="intTitleW1">Driver-Focused</span><br>
+            <span class="htext-reveal htext-reveal--delay" id="intTitleW2">Command Center</span>
+          </h2>
+        </div>
+        <div class="interior__features" id="interiorFeatures">
+          <div class="interior__feature int-feature" data-index="0">
+            <div class="interior__feature-line"></div>
+            <div class="interior__feature-title">Recaro Performance Seats</div>
+            <div class="interior__feature-desc">Aggressive bolstering with microfiber inserts holds you firmly through
+              every corner. Heated and ventilated for year-round track days.</div>
+          </div>
+          <div class="interior__feature int-feature" data-index="1">
+            <div class="interior__feature-line"></div>
+            <div class="interior__feature-title">Heads-Up Display</div>
+            <div class="interior__feature-desc">Speed, RPM, G-force, and lap timer projected directly onto the
+              windshield. Your eyes never leave the road.</div>
+          </div>
+          <div class="interior__feature int-feature" data-index="2">
+            <div class="interior__feature-line"></div>
+            <div class="interior__feature-title">Performance Data Recorder</div>
+            <div class="interior__feature-desc">HD camera records your track runs with telemetry overlay — speed,
+              braking points, steering input, and G-forces in real time.</div>
+          </div>
+          <div class="interior__feature int-feature" data-index="3">
+            <div class="interior__feature-line"></div>
+            <div class="interior__feature-title">Bose Premium Audio</div>
+            <div class="interior__feature-desc">9-speaker system tuned specifically for the Camaro's cabin acoustics. Or
+              turn it off and listen to the supercharger whine.</div>
+          </div>
+        </div>
+      </div>
+      <div class="interior__image-side" id="interiorImgSide">
+        <img src="images/interior.png" alt="Camaro ZL1 interior with sport seats and red stitching" id="interiorImg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: TRIMS — 3D tilt cards ===== -->
+  <div class="divider"></div>
+  <section class="section trims" id="trims">
+    <div class="section__inner">
+      <div class="section-header">
+        <p class="section-header__label" id="trimsLabel">Choose Your Weapon</p>
+        <h2 class="section-header__title" id="trimsTitle">
+          <span class="htext-reveal" id="trimsTitleW1">Trim</span>
+          <span class="htext-reveal htext-reveal--delay" id="trimsTitleW2">Levels</span>
+        </h2>
+      </div>
+      <div class="trims__grid">
+        <div class="trim-card tilt-card" id="trimCard1">
+          <div class="tilt-card__inner">
+            <div class="trim-card__name">1LT</div>
+            <div class="trim-card__price">Starting at $28,400</div>
+            <div class="trim-card__hp"><span class="count-up" data-target="275">0</span><span>HP</span></div>
+            <div class="trim-card__hp-label">Turbocharged 2.0L I4</div>
+            <div class="trim-card__details">
+              <div class="trim-card__detail"><span>0–60 mph</span><span class="trim-card__detail-value">5.4s</span>
+              </div>
+              <div class="trim-card__detail"><span>Transmission</span><span class="trim-card__detail-value">6-Speed
+                  Manual</span></div>
+              <div class="trim-card__detail"><span>Drive</span><span class="trim-card__detail-value">RWD</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="trim-card tilt-card" id="trimCard2">
+          <div class="tilt-card__inner">
+            <div class="trim-card__name">SS</div>
+            <div class="trim-card__price">Starting at $39,995</div>
+            <div class="trim-card__hp"><span class="count-up" data-target="455">0</span><span>HP</span></div>
+            <div class="trim-card__hp-label">6.2L V8 LT1</div>
+            <div class="trim-card__details">
+              <div class="trim-card__detail"><span>0–60 mph</span><span class="trim-card__detail-value">4.0s</span>
+              </div>
+              <div class="trim-card__detail"><span>Transmission</span><span class="trim-card__detail-value">10-Speed
+                  Auto</span></div>
+              <div class="trim-card__detail"><span>Drive</span><span class="trim-card__detail-value">RWD</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="trim-card tilt-card trim-card--featured" id="trimCard3">
+          <div class="tilt-card__inner">
+            <div class="trim-card__name" style="color: var(--red);">ZL1</div>
+            <div class="trim-card__price">Starting at $65,500</div>
+            <div class="trim-card__hp"><span class="count-up" data-target="650">0</span><span>HP</span></div>
+            <div class="trim-card__hp-label">Supercharged 6.2L LT4</div>
+            <div class="trim-card__details">
+              <div class="trim-card__detail"><span>0–60 mph</span><span class="trim-card__detail-value">3.5s</span>
+              </div>
+              <div class="trim-card__detail"><span>Transmission</span><span class="trim-card__detail-value">10-Speed
+                  Auto</span></div>
+              <div class="trim-card__detail"><span>Drive</span><span class="trim-card__detail-value">RWD</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: CTA ===== -->
+  <div class="divider"></div>
+  <section class="section cta" id="cta">
+    <div class="cta__accent-bar" id="ctaAccentBar"></div>
+    <div class="cta__bg-text">CAMARO</div>
+    <div class="cta__inner">
+      <p class="section-header__label" id="ctaLabel">Ready?</p>
+      <h2 class="cta__title" id="ctaTitle">
+        <span class="cta-title-word" id="ctaTw1">This Is Your</span><br>
+        <span class="cta-title-word" id="ctaTw2">Starting Line</span>
+      </h2>
+      <p class="cta__desc" id="ctaDesc">
+        Configure your Camaro. Choose your engine, transmission, color, and options.
+        Build the machine that matches your ambition.
+      </p>
+      <button class="cta__btn" id="ctaBtn">
+        Build &amp; Price
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M3 8h10M9 4l4 4-4 4" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__left"><span>■</span> CAMARO ZL1</div>
+    <div class="footer__right">A scroll experience. Not affiliated with General Motors.</div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    (function () {
+      'use strict';
+
+      const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // ─── DOM refs ────────────────────────────────────────────────────
+      const scrollProgress = document.getElementById('scrollProgress');
+      const nav = document.getElementById('nav');
+      const heroBg = document.getElementById('heroBg');
+      const heroLabel = document.getElementById('heroLabel');
+      const heroTitle = document.getElementById('heroTitle');
+      const heroSub = document.getElementById('heroSub');
+      const heroLine = document.getElementById('heroLine');
+      const heroStats = document.getElementById('heroStats');
+
+      // Legacy scroll section
+      const legacySection = document.getElementById('legacy');
+      const legacyBgImg = document.getElementById('legacyBgImg');
+      const lsPhase1 = document.getElementById('lsPhase1');
+      const lsPhase2 = document.getElementById('lsPhase2');
+      const lsPhase3 = document.getElementById('lsPhase3');
+      const lsProgressFill = document.getElementById('lsProgressFill');
+      const lsStat1 = document.getElementById('lsStat1');
+      const lsStat2 = document.getElementById('lsStat2');
+      const lsStat3 = document.getElementById('lsStat3');
+      const lsTitle1 = document.getElementById('lsTitle1');
+      const lsTitle2 = document.getElementById('lsTitle2');
+
+      // Exterior scroll section
+      const exteriorSection = document.getElementById('exterior');
+      const exteriorImg = document.getElementById('exteriorImg');
+      const exteriorOverlay = document.getElementById('exteriorOverlay');
+      const extLabel = document.getElementById('extLabel');
+      const extWord1 = document.getElementById('extWord1');
+      const extWord2 = document.getElementById('extWord2');
+      const extDesc = document.getElementById('extDesc');
+
+      // Engine
+      const engineSection = document.getElementById('engine');
+      const engineDivider = document.getElementById('engineDivider');
+      const engineLabel = document.getElementById('engineLabel');
+      const engineTitleW1 = document.getElementById('engineTitleW1');
+      const engineTitleW2 = document.getElementById('engineTitleW2');
+      const engineImgWrap = document.getElementById('engineImgWrap');
+      const engineImg = document.getElementById('engineImg');
+      const engineParas = document.querySelectorAll('.engine-para');
+      const specCards = document.querySelectorAll('.spec-card');
+
+      // Speed
+      const speedSection = document.getElementById('speed');
+      const speedSticky = document.getElementById('speedSticky');
+      const speedCar = document.getElementById('speedCar');
+      const speedNumber = document.getElementById('speedNumber');
+      const speedDisplay = document.getElementById('speedDisplay');
+      const speedLines = document.getElementById('speedLines');
+      const speedStreakLights = document.getElementById('speedStreakLights');
+      const speedSmoke = document.getElementById('speedSmoke');
+      const speedVignette = document.getElementById('speedVignette');
+      const speedGrade = document.getElementById('speedGrade');
+      const speedGaugeFill = document.getElementById('speedGaugeFill');
+      const speedNeedle = document.getElementById('speedNeedle');
+      const speedGear = document.getElementById('speedGear');
+      const speedStamp = document.getElementById('speedStamp');
+
+      // Interior
+      const interiorSection = document.getElementById('interior');
+      const intLabel = document.getElementById('intLabel');
+      const intTitleW1 = document.getElementById('intTitleW1');
+      const intTitleW2 = document.getElementById('intTitleW2');
+      const intFeatures = document.querySelectorAll('.int-feature');
+      const interiorImg = document.getElementById('interiorImg');
+
+      // Trims
+      const trimsSection = document.getElementById('trims');
+      const trimsLabel = document.getElementById('trimsLabel');
+      const trimsTitleW1 = document.getElementById('trimsTitleW1');
+      const trimsTitleW2 = document.getElementById('trimsTitleW2');
+      const trimCards = document.querySelectorAll('.tilt-card');
+
+      // CTA
+      const ctaSection = document.getElementById('cta');
+      const ctaAccentBar = document.getElementById('ctaAccentBar');
+      const ctaTw1 = document.getElementById('ctaTw1');
+      const ctaTw2 = document.getElementById('ctaTw2');
+      const ctaDesc = document.getElementById('ctaDesc');
+      const ctaBtn = document.getElementById('ctaBtn');
+      const ctaLabel = document.getElementById('ctaLabel');
+
+      // Video scroller
+      const videoScroller = document.getElementById('videoScroller');
+      const videoScrollerBg = document.getElementById('videoScrollerBg');
+      const videoPhase1 = document.getElementById('videoPhase1');
+      const videoPhase2 = document.getElementById('videoPhase2');
+      const vsLabel1 = document.getElementById('vsLabel1');
+      const vsTL1 = document.getElementById('vsTL1');
+      const vsTL2 = document.getElementById('vsTL2');
+      const vsSubtitle1 = document.getElementById('vsSubtitle1');
+      const vsP2Line = document.getElementById('vsP2Line');
+      const vsQuote = document.getElementById('vsQuote');
+      const vsStatRow = document.getElementById('vsStatRow');
+      const vsHpCount = document.getElementById('vsHpCount');
+      const vsLink = document.getElementById('vsLink');
+      let vsHpCounted = false;
+
+      // ─── Utilities ───────────────────────────────────────────────────
+      function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+      function lerp(a, b, t) { return a + (b - a) * t; }
+
+      // Map a value in [in0,in1] to [out0,out1], clamped
+      function mapRange(value, in0, in1, out0, out1) {
+        const t = clamp((value - in0) / (in1 - in0), 0, 1);
+        return lerp(out0, out1, t);
+      }
+
+      // ─── Scroll progress bar ─────────────────────────────────────────
+      function updateProgress() {
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        scrollProgress.style.width = clamp((window.scrollY / h) * 100, 0, 100) + '%';
+      }
+
+      // ─── Nav compact ─────────────────────────────────────────────────
+      function updateNav() {
+        nav.classList.toggle('compact', window.scrollY > 80);
+      }
+
+      // ─── Hero parallax ───────────────────────────────────────────────
+      function heroParallax() {
+        if (REDUCED_MOTION) return;
+        const scrolled = window.scrollY;
+        const vh = window.innerHeight;
+        if (scrolled < vh * 1.5) {
+          const progress = scrolled / vh;
+          heroBg.style.transform = `scale(${1.1 + progress * 0.2})`;
+          heroBg.style.opacity = 1 - progress * 0.6;
+        }
+      }
+
+      // ─── Counter animation (one-shot) ────────────────────────────────
+      const countedEls = new Set();
+      function animateCounter(el) {
+        if (countedEls.has(el)) return;
+        countedEls.add(el);
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1200;
+        const start = performance.now();
+        function frame(now) {
+          const elapsed = now - start;
+          const t = clamp(elapsed / duration, 0, 1);
+          // ease-out-expo
+          const eased = t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+          el.textContent = Math.round(eased * target);
+          if (t < 1) requestAnimationFrame(frame);
+          else el.textContent = target;
+        }
+        requestAnimationFrame(frame);
+      }
+
+      function checkCounters(container) {
+        container.querySelectorAll('.count-up:not(.counted)').forEach(el => {
+          animateCounter(el);
+          el.classList.add('counted');
+        });
+      }
+
+      // ─── Generic element visibility check ───────────────────────────
+      function isVisible(el, threshold = 0.15) {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        return rect.top < vh * (1 - threshold) && rect.bottom > vh * threshold;
+      }
+
+      // Fraction of element that has scrolled past top of viewport: 0 = just entered, 1 = bottom leaving top
+      function sectionProgress(el) {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const h = el.offsetHeight;
+        return clamp((-rect.top) / (h - vh), 0, 1);
+      }
+
+      // How far through viewport (0 = top of el at bottom of vp, 1 = top of el at top of vp)
+      function viewportProgress(el) {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        return clamp(1 - rect.top / vh, 0, 1);
+      }
+
+      // ─── Horizontal text reveal helper ───────────────────────────────
+      function revealHText(el, progress, delay = 0) {
+        const p = clamp((progress - delay) / 0.35, 0, 1);
+        const eased = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        el.style.clipPath = `inset(0 ${100 - eased * 100}% 0 0)`;
+        el.style.transform = `translateX(${(1 - eased) * -40}px)`;
+        el.style.opacity = eased > 0 ? 1 : 0;
+      }
+
+      // ─── Video scroller ──────────────────────────────────────────────
+      function handleVideoScroller() {
+        if (!videoScroller || REDUCED_MOTION) return;
+        const rect = videoScroller.getBoundingClientRect();
+        const sectionH = videoScroller.offsetHeight;
+        const vh = window.innerHeight;
+        const progress = clamp(-rect.top / (sectionH - vh), 0, 1);
+
+        // ── Video: stays visible throughout, just a gentle slow zoom
+        // brightness stays 0.75–0.65, just enough to anchor text contrast
+        const brightness = mapRange(progress, 0, 1, 0.75, 0.60);
+        const zoom = mapRange(progress, 0, 1, 1.0, 1.10);
+        videoScrollerBg.style.filter = `brightness(${brightness})`;
+        videoScrollerBg.style.transform = `scale(${zoom})`;
+
+        // ══ PHASE 1: "HEAR IT ROAR" — bottom-left, always present
+        // Label fades in quickly at the start
+        const labelP = clamp(mapRange(progress, 0.02, 0.10, 0, 1), 0, 1);
+        const labelE = 1 - Math.pow(1 - labelP, 2);
+        vsLabel1.style.opacity = labelE;
+        vsLabel1.style.transform = `translateY(${(1 - labelE) * 16}px)`;
+
+        // "HEAR IT" clips in from left
+        const w1P = clamp(mapRange(progress, 0.04, 0.18, 0, 1), 0, 1);
+        const w1E = 1 - Math.pow(1 - w1P, 3);
+        vsTL1.style.clipPath = `inset(0 ${(1 - w1E) * 100}% 0 0)`;
+        vsTL1.style.opacity = w1E > 0 ? 1 : 0;
+        vsTL1.style.transform = `translateY(${(1 - w1E) * 40}px)`;
+
+        // "ROAR" clips in from left, slight delay
+        const w2P = clamp(mapRange(progress, 0.10, 0.24, 0, 1), 0, 1);
+        const w2E = 1 - Math.pow(1 - w2P, 3);
+        vsTL2.style.clipPath = `inset(0 ${(1 - w2E) * 100}% 0 0)`;
+        vsTL2.style.opacity = w2E > 0 ? 1 : 0;
+        vsTL2.style.transform = `translateY(${(1 - w2E) * 40}px)`;
+
+        // Subtitle fades in after title
+        const subP = clamp(mapRange(progress, 0.20, 0.32, 0, 1), 0, 1);
+        const subE = 1 - Math.pow(1 - subP, 2);
+        vsSubtitle1.style.opacity = subE;
+        vsSubtitle1.style.transform = `translateY(${(1 - subE) * 20}px)`;
+
+        // Phase 1 stays fully visible through phase 2 — title never leaves
+        videoPhase1.style.pointerEvents = 'auto';
+
+        // ══ PHASE 2: compact info panel slides in from right (0.45 → 0.65)
+        // sits right of the title, doesn't cover it
+        const p2P = clamp(mapRange(progress, 0.45, 0.62, 0, 1), 0, 1);
+        const p2E = 1 - Math.pow(1 - p2P, 3);
+
+        videoPhase2.style.opacity = p2E;
+        videoPhase2.style.transform = `translateX(${(1 - p2E) * 60}px)`;
+        videoPhase2.style.pointerEvents = p2E > 0.5 ? 'auto' : 'none';
+
+        // Red accent line grows down inside the panel
+        const lineP = clamp(mapRange(progress, 0.48, 0.60, 0, 1), 0, 1);
+        vsP2Line.style.transform = `scaleY(${lineP})`;
+
+        // Quote fades up inside panel
+        const qP = clamp(mapRange(progress, 0.52, 0.65, 0, 1), 0, 1);
+        const qE = 1 - Math.pow(1 - qP, 2);
+        vsQuote.style.opacity = qE;
+        vsQuote.style.transform = `translateY(${(1 - qE) * 20}px)`;
+
+        // Stat row
+        const sP = clamp(mapRange(progress, 0.58, 0.70, 0, 1), 0, 1);
+        const sE = 1 - Math.pow(1 - sP, 2);
+        vsStatRow.style.opacity = sE;
+        vsStatRow.style.transform = `translateY(${(1 - sE) * 16}px)`;
+
+        // Link
+        const lP = clamp(mapRange(progress, 0.64, 0.75, 0, 1), 0, 1);
+        const lE = 1 - Math.pow(1 - lP, 2);
+        vsLink.style.opacity = lE;
+        vsLink.style.transform = `translateY(${(1 - lE) * 12}px)`;
+
+        // HP counter fires once
+        if (progress > 0.50 && !vsHpCounted) {
+          vsHpCounted = true;
+          const start = performance.now();
+          const dur = 1200;
+          (function countHp(now) {
+            const t = clamp((now - start) / dur, 0, 1);
+            const e = t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+            vsHpCount.textContent = Math.round(e * 650);
+            if (t < 1) requestAnimationFrame(countHp);
+            else vsHpCount.textContent = '650';
+          })(performance.now());
+        }
+      }
+
+      // ─── LEGACY — scroll-pinned 3-phase storytelling ─────────────────
+      let legacyPhase3Triggered = false;
+      function handleLegacy() {
+        if (!legacySection || REDUCED_MOTION) return;
+        const rect = legacySection.getBoundingClientRect();
+        const sectionH = legacySection.offsetHeight;
+        const vh = window.innerHeight;
+        const progress = clamp(-rect.top / (sectionH - vh), 0, 1);
+
+        // Progress bar
+        lsProgressFill.style.width = (progress * 100) + '%';
+
+        // Background image parallax
+        const bgY = mapRange(progress, 0, 1, 0, -120);
+        legacyBgImg.style.transform = `scale(1.18) translateY(${bgY}px)`;
+
+        // Phase 1 — Title character reveal (0–0.28)
+        const p1 = clamp(progress / 0.28, 0, 1);
+        const easeP1 = 1 - Math.pow(1 - p1, 3);
+
+        // Row 1 letters come in from left
+        lsTitle1.style.clipPath = `inset(0 ${(1 - easeP1) * 100}% 0 0)`;
+        lsTitle1.style.transform = `translateX(${(1 - easeP1) * -80}px)`;
+        lsTitle1.style.opacity = easeP1;
+
+        // Row 2 letters come in from right, slight delay
+        const p1b = clamp((progress - 0.04) / 0.28, 0, 1);
+        const easeP1b = 1 - Math.pow(1 - p1b, 3);
+        lsTitle2.style.clipPath = `inset(0 0 0 ${(1 - easeP1b) * 100}%)`;
+        lsTitle2.style.transform = `translateX(${(1 - easeP1b) * 80}px)`;
+        lsTitle2.style.opacity = easeP1b;
+
+        // Phase 1 element fades out as phase 2 enters
+        const p1Fade = clamp(mapRange(progress, 0.28, 0.42, 1, 0), 0, 1);
+        lsPhase1.style.opacity = p1Fade;
+        lsPhase1.style.transform = `translateY(${(1 - p1Fade) * -30}px)`;
+
+        // Phase 2 — paragraphs staggered (0.30–0.62)
+        const p2In = clamp(mapRange(progress, 0.30, 0.38, 0, 1), 0, 1);
+        const p2Out = clamp(mapRange(progress, 0.60, 0.72, 1, 0), 0, 1);
+        const p2Vis = Math.min(p2In, p2Out);
+        lsPhase2.style.opacity = p2Vis;
+        lsPhase2.style.transform = `translateY(${(1 - p2In) * 60}px)`;
+
+        // Individual paragraphs
+        const paras = lsPhase2.querySelectorAll('.ls-phase__para');
+        paras.forEach((para, i) => {
+          const pIn = clamp(mapRange(progress, 0.30 + i * 0.05, 0.42 + i * 0.05, 0, 1), 0, 1);
+          const eased = 1 - Math.pow(1 - pIn, 2);
+          para.style.opacity = Math.min(eased, p2Vis);
+          para.style.transform = `translateY(${(1 - eased) * 40}px)`;
+        });
+
+        // Phase 3 — stats (0.68–1.0)
+        const p3In = clamp(mapRange(progress, 0.68, 0.82, 0, 1), 0, 1);
+        const easeP3 = 1 - Math.pow(1 - p3In, 3);
+        lsPhase3.style.opacity = easeP3;
+
+        [lsStat1, lsStat2, lsStat3].forEach((stat, i) => {
+          const delay = i * 0.05;
+          const sp = clamp(mapRange(progress, 0.68 + delay, 0.82 + delay, 0, 1), 0, 1);
+          const easedSp = 1 - Math.pow(1 - sp, 3);
+          stat.style.opacity = easedSp;
+          stat.style.transform = `translateY(${(1 - easedSp) * 50}px) scale(${0.8 + easedSp * 0.2})`;
+        });
+
+        // Trigger counters once
+        if (progress > 0.72 && !legacyPhase3Triggered) {
+          legacyPhase3Triggered = true;
+          checkCounters(lsPhase3);
+        }
+      }
+
+      // ─── EXTERIOR — scroll-driven zoom + word reveal ──────────────────
+      function handleExterior() {
+        if (!exteriorSection || REDUCED_MOTION) return;
+        const rect = exteriorSection.getBoundingClientRect();
+        const sectionH = exteriorSection.offsetHeight;
+        const vh = window.innerHeight;
+        const progress = clamp(-rect.top / (sectionH - vh), 0, 1);
+
+        // Image: starts tight zoom, pulls back as we scroll
+        const imgScale = mapRange(progress, 0, 0.6, 1.25, 1.0);
+        const imgY = mapRange(progress, 0, 1, 0, -60);
+        exteriorImg.style.transform = `scale(${imgScale}) translateY(${imgY}px)`;
+
+        // Overlay: starts very dark, lightens to let us see the car
+        const overlayOpacity = mapRange(progress, 0, 0.35, 0.88, 0.5);
+        exteriorOverlay.style.opacity = overlayOpacity;
+
+        // Label fades in
+        const labelP = clamp(mapRange(progress, 0.1, 0.3, 0, 1), 0, 1);
+        extLabel.style.opacity = labelP;
+        extLabel.style.transform = `translateY(${(1 - labelP) * 20}px)`;
+
+        // Word 1 wipes in from left
+        const w1 = clamp(mapRange(progress, 0.15, 0.38, 0, 1), 0, 1);
+        const eW1 = 1 - Math.pow(1 - w1, 3);
+        extWord1.style.clipPath = `inset(0 ${(1 - eW1) * 100}% 0 0)`;
+        extWord1.style.transform = `translateX(${(1 - eW1) * -60}px)`;
+        extWord1.style.opacity = eW1;
+
+        // Word 2 wipes in from right, offset
+        const w2 = clamp(mapRange(progress, 0.22, 0.45, 0, 1), 0, 1);
+        const eW2 = 1 - Math.pow(1 - w2, 3);
+        extWord2.style.clipPath = `inset(0 0 0 ${(1 - eW2) * 100}%)`;
+        extWord2.style.transform = `translateX(${(1 - eW2) * 60}px)`;
+        extWord2.style.opacity = eW2;
+
+        // Desc blurs in
+        const descP = clamp(mapRange(progress, 0.40, 0.65, 0, 1), 0, 1);
+        const eDesc = 1 - Math.pow(1 - descP, 2);
+        extDesc.style.opacity = eDesc;
+        extDesc.style.filter = `blur(${(1 - eDesc) * 12}px)`;
+        extDesc.style.transform = `translateY(${(1 - eDesc) * 30}px)`;
+      }
+
+      // ─── ENGINE — viewport-triggered reveals ─────────────────────────
+      let engineRevealed = false;
+      function handleEngine() {
+        if (engineRevealed || REDUCED_MOTION) return;
+        if (!isVisible(engineSection, 0.2)) return;
+        engineRevealed = true;
+
+        // Section label
+        engineLabel.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        engineLabel.style.opacity = '1';
+        engineLabel.style.transform = 'translateY(0)';
+
+        // Title word wipe
+        [engineTitleW1, engineTitleW2].forEach((el, i) => {
+          setTimeout(() => {
+            el.style.transition = `clip-path 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease`;
+            el.classList.add('revealed');
+          }, i * 120);
+        });
+
+        // Engine image slides + scales
+        setTimeout(() => {
+          engineImgWrap.style.transition = 'opacity 1s ease, transform 1.2s cubic-bezier(0.16,1,0.3,1)';
+          engineImgWrap.style.opacity = '1';
+          engineImgWrap.style.transform = 'translateX(0) scale(1)';
+        }, 100);
+
+        // Engine image inner parallax tilt
+        setTimeout(() => {
+          engineImg.style.transition = 'transform 1.4s cubic-bezier(0.16,1,0.3,1)';
+          engineImg.style.transform = 'scale(1)';
+        }, 200);
+
+        // Paragraphs staggered
+        engineParas.forEach((p, i) => {
+          setTimeout(() => {
+            p.style.transition = `opacity 0.8s ease, transform 0.8s cubic-bezier(0.16,1,0.3,1)`;
+            p.style.opacity = '1';
+            p.style.transform = 'translateX(0)';
+          }, 200 + i * 150);
+        });
+
+        // Spec cards staggered with spring
+        specCards.forEach((card, i) => {
+          setTimeout(() => {
+            card.style.transition = `opacity 0.6s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1)`;
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1) translateY(0)';
+            // Trigger counters
+            checkCounters(card);
+          }, 400 + i * 100);
+        });
+      }
+
+      // Continuous engine image parallax on scroll
+      function engineParallax() {
+        if (!engineSection || REDUCED_MOTION || !engineRevealed) return;
+        const rect = engineSection.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (rect.top < vh && rect.bottom > 0) {
+          const progress = (vh - rect.top) / (vh + rect.height);
+          const y = (progress - 0.5) * -60;
+          engineImg.style.transform = `scale(1) translateY(${y}px)`;
+        }
+      }
+
+      // ─── SPEED — camera-locked top-speed run ─────────────────────────
+      const TOP_SPEED = 230;
+      function speedRaceBy() {
+        if (!speedSection || REDUCED_MOTION) return;
+        const rect = speedSection.getBoundingClientRect();
+        const sectionH = speedSection.offsetHeight;
+        const vh = window.innerHeight;
+        const inView = rect.top < vh && rect.bottom > 0;
+        const progress = clamp(-rect.top / (sectionH - vh), 0, 1);
+
+        // Acceleration curve: quick launch, then a long high-speed pull that
+        // eases toward the limiter (feels like a real top-speed run).
+        const accel = 1 - Math.pow(1 - progress, 1.7);
+        const spd = Math.round(accel * TOP_SPEED);
+        const intensity = clamp(spd / TOP_SPEED, 0, 1);   // 0 → 1
+        const fast = spd > 165;
+
+        speedNumber.textContent = spd;
+        speedDisplay.textContent = spd;
+        speedNumber.classList.toggle('fast', fast);
+
+        // ── Car: subtle zoom + lateral drift + bob, with vibration at speed
+        const zoom = 1.05 + intensity * 0.11;
+        const drift = mapRange(progress, 0, 1, 26, -66);           // px, gentle lateral pull
+        const bob = Math.sin(progress * Math.PI * 5) * (2 + intensity * 3);
+        const shakeX = fast ? (Math.random() - 0.5) * intensity * 7 : 0;
+        const shakeY = fast ? (Math.random() - 0.5) * intensity * 6 : 0;
+        speedCar.style.transform = `translate(${drift + shakeX}px, ${bob + shakeY}px) scale(${zoom})`;
+        speedCar.style.filter =
+          `brightness(${0.7 + intensity * 0.22}) contrast(${1.14 + intensity * 0.16}) ` +
+          `saturate(${1.08 + intensity * 0.22}) blur(${intensity * intensity * 1.6}px)`;
+
+        // ── World rushing past (kept subtle so the car stays the hero)
+        speedStreakLights.style.opacity = (intensity * 0.3).toFixed(3);
+        speedLines.classList.toggle('active', spd > 12 && progress < 0.99);
+
+        // ── Tire smoke trails off the rear, strongest through the mid pull
+        const smokeAmt = clamp(Math.sin(progress * Math.PI) * 1.15, 0, 1);
+        speedSmoke.style.opacity = (smokeAmt * 0.4).toFixed(3);
+        speedSmoke.style.transform = `scale(${0.85 + smokeAmt * 0.45}) translateX(${smokeAmt * 30}px)`;
+
+        // ── Tunnel vignette tightens, redline grade glows in
+        speedVignette.style.boxShadow =
+          `inset 0 0 ${140 + intensity * 150}px ${24 + intensity * 70}px rgba(0,0,0,0.9)`;
+        speedGrade.style.opacity = (clamp((intensity - 0.6) / 0.4, 0, 1) * 0.9).toFixed(3);
+
+        // ── Camera shake on the whole stage at high speed
+        if (inView) {
+          const sh = fast ? intensity * 3.5 : 0;
+          speedSticky.style.transform =
+            `translate(${(Math.random() - 0.5) * sh}px, ${(Math.random() - 0.5) * sh}px)`;
+        }
+
+        // ── Speedometer gauge (270° sweep)
+        speedGaugeFill.style.strokeDashoffset = (100 - intensity * 100).toFixed(1);
+        speedNeedle.style.transform = `rotate(${intensity * 270}deg)`;
+        const gear = spd < 30 ? 2 : spd < 70 ? 3 : spd < 110 ? 4 : spd < 160 ? 5 : 6;
+        speedGear.textContent = 'GEAR — ' + (spd < 5 ? 'N' : gear);
+
+        // ── Climax stamp near the limiter
+        const stampP = clamp(mapRange(progress, 0.9, 0.97, 0, 1), 0, 1);
+        speedStamp.style.opacity = stampP.toFixed(3);
+        speedStamp.style.transform = `translate(-50%,-50%) scale(${1.25 - stampP * 0.25})`;
+      }
+
+      // ─── INTERIOR — cascading feature cards ──────────────────────────
+      let interiorRevealed = false;
+      function handleInterior() {
+        if (interiorRevealed || REDUCED_MOTION) return;
+        if (!isVisible(interiorSection, 0.25)) return;
+        interiorRevealed = true;
+
+        // Label
+        intLabel.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        intLabel.style.opacity = '1';
+        intLabel.style.transform = 'translateY(0)';
+
+        // Title words
+        [intTitleW1, intTitleW2].forEach((el, i) => {
+          setTimeout(() => {
+            el.style.transition = 'clip-path 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease';
+            el.classList.add('revealed');
+          }, i * 130);
+        });
+
+        // Features cascade from left with increasing Y offset
+        intFeatures.forEach((feat, i) => {
+          setTimeout(() => {
+            feat.style.transition = `opacity 0.7s ease, transform 0.8s cubic-bezier(0.16,1,0.3,1)`;
+            feat.style.opacity = '1';
+            feat.style.transform = 'translateX(0) translateY(0)';
+            // Animate the red underline
+            const line = feat.querySelector('.interior__feature-line');
+            if (line) {
+              line.style.transition = `width 0.6s cubic-bezier(0.16,1,0.3,1) ${i * 0.05 + 0.2}s`;
+              line.style.width = '100%';
+            }
+          }, 150 + i * 110);
+        });
+
+        // Image parallax side reveal
+        setTimeout(() => {
+          interiorImg.style.transition = 'transform 1.4s cubic-bezier(0.16,1,0.3,1), opacity 1s ease';
+          interiorImg.style.opacity = '1';
+          interiorImg.style.transform = 'scale(1) translateX(0)';
+        }, 80);
+      }
+
+      // Continuous interior image parallax
+      function interiorParallax() {
+        if (!interiorSection || REDUCED_MOTION || !interiorRevealed) return;
+        const rect = interiorSection.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (rect.top < vh && rect.bottom > 0) {
+          const progress = (vh - rect.top) / (vh + rect.height);
+          const y = (progress - 0.5) * -80;
+          interiorImg.style.transform = `scale(1.08) translateY(${y}px)`;
+        }
+      }
+
+      // ─── TRIMS — 3D tilt on hover + scroll entrance ──────────────────
+      let trimsRevealed = false;
+      function handleTrims() {
+        if (trimsRevealed || REDUCED_MOTION) return;
+        if (!isVisible(trimsSection, 0.2)) return;
+        trimsRevealed = true;
+
+        // Label + title
+        trimsLabel.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        trimsLabel.style.opacity = '1';
+        trimsLabel.style.transform = 'translateY(0)';
+
+        [trimsTitleW1, trimsTitleW2].forEach((el, i) => {
+          setTimeout(() => {
+            el.style.transition = 'clip-path 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease';
+            el.classList.add('revealed');
+          }, i * 120);
+        });
+
+        // Cards staggered scale-in
+        trimCards.forEach((card, i) => {
+          setTimeout(() => {
+            card.style.transition = `opacity 0.7s ease, transform 0.8s cubic-bezier(0.34,1.56,0.64,1)`;
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1) translateY(0)';
+            checkCounters(card);
+          }, 200 + i * 130);
+        });
+      }
+
+      // 3D tilt on mouse move
+      function setupTiltCards() {
+        trimCards.forEach(card => {
+          card.addEventListener('mousemove', e => {
+            if (REDUCED_MOTION) return;
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            const inner = card.querySelector('.tilt-card__inner');
+            if (inner) {
+              inner.style.transform = `perspective(600px) rotateY(${x * 14}deg) rotateX(${-y * 10}deg) scale(1.02)`;
+            }
+          });
+          card.addEventListener('mouseleave', () => {
+            const inner = card.querySelector('.tilt-card__inner');
+            if (inner) {
+              inner.style.transform = 'perspective(600px) rotateY(0deg) rotateX(0deg) scale(1)';
+              inner.style.transition = 'transform 0.5s cubic-bezier(0.16,1,0.3,1)';
+            }
+          });
+          card.addEventListener('mouseenter', () => {
+            const inner = card.querySelector('.tilt-card__inner');
+            if (inner) inner.style.transition = 'transform 0.1s ease';
+          });
+        });
+      }
+
+      // ─── CTA — scale-from-large entrance ─────────────────────────────
+      let ctaRevealed = false;
+      function handleCTA() {
+        if (ctaRevealed || REDUCED_MOTION) return;
+        if (!isVisible(ctaSection, 0.3)) return;
+        ctaRevealed = true;
+
+        // Accent bar grows
+        ctaAccentBar.style.transition = 'height 0.8s cubic-bezier(0.16,1,0.3,1)';
+        ctaAccentBar.style.height = '120px';
+
+        ctaLabel.style.transition = 'opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s';
+        ctaLabel.style.opacity = '1';
+        ctaLabel.style.transform = 'translateY(0)';
+
+        // Title words scale from large
+        [ctaTw1, ctaTw2].forEach((el, i) => {
+          setTimeout(() => {
+            el.style.transition = `opacity 0.7s ease, transform 0.9s cubic-bezier(0.16,1,0.3,1)`;
+            el.style.opacity = '1';
+            el.style.transform = 'scale(1) translateY(0)';
+          }, i * 120);
+        });
+
+        setTimeout(() => {
+          ctaDesc.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+          ctaDesc.style.opacity = '1';
+          ctaDesc.style.transform = 'translateY(0)';
+        }, 300);
+
+        setTimeout(() => {
+          ctaBtn.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1)';
+          ctaBtn.style.opacity = '1';
+          ctaBtn.style.transform = 'scale(1) translateY(0)';
+        }, 450);
+      }
+
+      // ─── Hero entrance ───────────────────────────────────────────────
+      function animateHero() {
+        setTimeout(() => heroLine.classList.add('animate'), 200);
+        setTimeout(() => {
+          heroLabel.style.transition = 'opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1)';
+          heroLabel.style.opacity = '1';
+          heroLabel.style.transform = 'translateX(0)';
+        }, 400);
+        setTimeout(() => {
+          heroTitle.style.transition = 'opacity 1.2s cubic-bezier(0.16,1,0.3,1), transform 1.2s cubic-bezier(0.16,1,0.3,1)';
+          heroTitle.style.opacity = '1';
+          heroTitle.style.transform = 'translateY(0) scale(1)';
+        }, 600);
+        setTimeout(() => {
+          heroSub.style.transition = 'opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1)';
+          heroSub.style.opacity = '1';
+          heroSub.style.transform = 'translateY(0)';
+        }, 1000);
+        if (heroStats) setTimeout(() => {
+          heroStats.style.transition = 'opacity 1s cubic-bezier(0.16,1,0.3,1), transform 1s cubic-bezier(0.16,1,0.3,1)';
+          heroStats.style.opacity = '1';
+          heroStats.style.transform = 'translateY(0)';
+        }, 1250);
+      }
+
+      // ─── Speed lines setup ───────────────────────────────────────────
+      function createSpeedLines() {
+        if (!speedLines) return;
+        for (let i = 0; i < 34; i++) {
+          const line = document.createElement('div');
+          line.className = 'speed-line' + (Math.random() < 0.28 ? ' speed-line--red' : '');
+          line.style.top = (4 + Math.random() * 92) + '%';
+          line.style.width = (80 + Math.random() * 460) + 'px';
+          line.style.animationDuration = (0.28 + Math.random() * 0.5) + 's';
+          line.style.animationDelay = (-Math.random() * 1) + 's';
+          speedLines.appendChild(line);
+        }
+      }
+
+      // ─── Speedometer gauge ticks ─────────────────────────────────────
+      function buildSpeedGauge() {
+        const g = document.getElementById('speedGaugeTicks');
+        if (!g) return;
+        const cx = 100, cy = 105, R = 80, start = 135, span = 270, n = 9;
+        const NS = 'http://www.w3.org/2000/svg';
+        for (let i = 0; i <= n; i++) {
+          const frac = i / n;
+          const a = (start + span * frac) * Math.PI / 180;
+          const r1 = R - 14, r2 = R - 3;
+          const line = document.createElementNS(NS, 'line');
+          line.setAttribute('x1', (cx + r1 * Math.cos(a)).toFixed(1));
+          line.setAttribute('y1', (cy + r1 * Math.sin(a)).toFixed(1));
+          line.setAttribute('x2', (cx + r2 * Math.cos(a)).toFixed(1));
+          line.setAttribute('y2', (cy + r2 * Math.sin(a)).toFixed(1));
+          if (frac >= 0.78) { line.setAttribute('stroke', 'var(--red)'); line.setAttribute('stroke-width', '3'); }
+          g.appendChild(line);
+        }
+      }
+
+      // ─── Smooth scroll for nav ───────────────────────────────────────
+      function setupSmoothScroll() {
+        document.querySelectorAll('.nav__link').forEach(link => {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: REDUCED_MOTION ? 'auto' : 'smooth', block: 'start' });
+          });
+        });
+      }
+
+      // ─── Divider animation (one-shot observer) ────────────────────────
+      function setupDividers() {
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.divider').forEach(d => obs.observe(d));
+      }
+
+      // ─── Master scroll handler ───────────────────────────────────────
+      let ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            updateProgress();
+            updateNav();
+            heroParallax();
+            handleVideoScroller();
+            handleLegacy();
+            handleExterior();
+            handleEngine();
+            engineParallax();
+            speedRaceBy();
+            handleInterior();
+            interiorParallax();
+            handleTrims();
+            handleCTA();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+
+      // ─── Init ────────────────────────────────────────────────────────
+      function init() {
+        createSpeedLines();
+        buildSpeedGauge();
+        setupSmoothScroll();
+        setupDividers();
+        setupTiltCards();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        setTimeout(animateHero, 300);
+        onScroll();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</body>
+
+</html>
